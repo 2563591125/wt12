@@ -1,0 +1,44 @@
+import java.util.Scanner;
+public class Bean {
+	Account achieve=new Account();
+static int v=0;
+static int  balance=0;
+int arr[][]={{111,111},{111,111}
+};
+ int getBalance() {
+
+return balance;
+}
+public int getV() {
+
+return v;
+}
+ void setBalance(int balance) {
+this.balance = balance;
+}
+ int balance(){
+return this.balance;
+}
+ int takemoney(int takemoney1){	 
+this.balance-=takemoney1;
+return balance;}
+ int savemoney(int savemoney1){
+this.balance+=savemoney1;
+return balance;
+}
+ void open(){
+System.out.println("开户需花费10元,存款后会从卡内余额中扣除!");
+System.out.println("是否继续开户?");
+System.out.println("1: 是   2: 否并返回主界面");
+Scanner sc=new Scanner(System.in);
+int x=10;
+int s=sc.nextInt();
+switch(s){
+ case 1:System.out.println("开户成功!");break;
+ case 2:Account.achieve();break;
+}
+}
+   void Leave() {
+	   System.out.println("请拿好您的银行卡和其他随身物品!");
+	   System.out.println("        欢迎下次光临!");
+   }}
